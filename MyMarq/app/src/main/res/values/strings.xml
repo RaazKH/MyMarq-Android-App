@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyMarq</string>
+    <string name="button">GO!</string>
+    <string name="button_OE">Olin Engineering</string>
+    <string name="pick_a">Select Campus Building</string>
+    <string-array name="building_names">
+        <item>Click Here</item>
+        <item>Engineering Hall</item>
+        <item>Olin Engineering</item>
+        <item>Haggerdy Hall</item>
+        <item>Cudhay Hall</item>
+        <item>Wher Chemistry</item>
+    </string-array>
+    <string name="f1">Floor 1</string>
+    <string name="f2">Floor 2</string>
+    <string name="f3">Floor 3</string>
+    <string name="f4">Floor 4</string>
+    <string name="f5">Floor 5</string>
+    <string name="fb">Lower Level</string>
+</resources>
