@@ -17,4 +17,7 @@
     <string name="f4">Floor 4</string>
     <string name="f5">Floor 5</string>
     <string name="fb">Lower Level</string>
+    <string name="get_scroll_position">Get Scroll Position</string>
+    <string name="get_zoomed_rect">Get zoomed rectangle</string>
+    <string name="get_current_zoom">Get current zoom</string>
 </resources>
