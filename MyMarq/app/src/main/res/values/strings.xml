@@ -5,11 +5,14 @@
     <string name="pick_a">Select Campus Building</string>
     <string-array name="building_names">
         <item>Click Here</item>
+        <item>Alumni Memorial Union</item>
+        <item>Cudahy Hall</item>
         <item>Engineering Hall</item>
+        <item>Haggerty Hall</item>
+        <item>Marquette Hall</item>
+        <item>Memorial Library</item>
         <item>Olin Engineering</item>
-        <item>Haggerdy Hall</item>
-        <item>Cudhay Hall</item>
-        <item>Wher Chemistry</item>
+        <item>Raynor Library</item>
     </string-array>
     <string name="f1">Floor 1</string>
     <string name="f2">Floor 2</string>
@@ -20,4 +23,5 @@
     <string name="get_scroll_position">Get Scroll Position</string>
     <string name="get_zoomed_rect">Get zoomed rectangle</string>
     <string name="get_current_zoom">Get current zoom</string>
+    <string name="building">Building</string>
 </resources>

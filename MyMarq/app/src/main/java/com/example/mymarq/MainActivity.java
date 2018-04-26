@@ -10,6 +10,7 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     @Override
     protected void onCreate        (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     void buildingS(String a) {
-        if(a.equals("Engineering Hall")) {
-            Intent intent = new Intent(this, EngineeringHall.class);
+        if (a.compareTo("Click Here")!= 0) {
+            Intent intent = new Intent(this, Button_Activity.class);
+            intent.putExtra(EXTRA_MESSAGE, a);
             startActivity(intent);
         }
-
     }
 }

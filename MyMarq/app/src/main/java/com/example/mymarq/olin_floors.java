@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.text.DecimalFormat;
 
-public class Ehall_F1 extends AppCompatActivity {
+public class olin_floors extends AppCompatActivity {
 
     //The vast majority of this code was used with permission from Mike Ortiz, https://github.com/MikeOrtiz/TouchImageView
 
@@ -23,13 +23,10 @@ public class Ehall_F1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ehall__f1);
-
+        setContentView(R.layout.activity_olin_floors);
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String floornum = intent.getStringExtra(Button_Activity.FLOOR_NUMBER);
-
-
         //
         // DecimalFormat rounds to 2 decimal places.
         //
@@ -38,33 +35,13 @@ public class Ehall_F1 extends AppCompatActivity {
         zoomedRectTextView = (TextView) findViewById(R.id.zoomed_rect);
         currentZoomTextView = (TextView) findViewById(R.id.current_zoom);
         switch (floornum){   //tests which floor to send user to
-            case "Floor 1": image = findViewById(R.id.FL1); break;
-            case "Floor 2": image = findViewById(R.id.FL2); break;
-            case "Floor 3": image = findViewById(R.id.FL3); break;
-            case "Floor 4": image = findViewById(R.id.FL4); break;
-            case "Lower Level": image = findViewById(R.id.FLB); break;
+            case "Floor 1": image = findViewById(R.id.oh1); break;
+            case "Floor 2": image = findViewById(R.id.oh2); break;
+            case "Floor 3": image = findViewById(R.id.oh3); break;
+            case "Floor 4": image = findViewById(R.id.oh4); break;
+            case "Floor 5": image = findViewById(R.id.oh5); break;
             default: throw new IllegalArgumentException("Invalid Floor");
         }
-        /*if(floornum.equals("Floor 1"))    //original code, no switch statement
-        {
-            image = findViewById(R.id.FL1);
-        }
-        else if(floornum.equals("Floor 2"))
-        {
-            image = findViewById(R.id.FL2);
-        }
-        else if(floornum.equals("Floor 3"))
-        {
-            image = findViewById(R.id.FL3);
-        }
-        else if(floornum.equals("Floor 4"))
-        {
-            image = findViewById(R.id.FL4);
-        }
-        else if(floornum.equals("Lower Level"))
-        {
-            image = findViewById(R.id.FLB);
-        }*/
         image.setVisibility(View.VISIBLE);
         //
         // Set the OnTouchImageViewListener which updates edit texts
@@ -84,12 +61,5 @@ public class Ehall_F1 extends AppCompatActivity {
                 currentZoomTextView.setText("getCurrentZoom(): " + currentZoom + " isZoomed(): " + isZoomed);
             }
         });
-
-
-        //Used for testing if the Strings were coming from the previous string
-        /* Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.textView);
-        textView.setText(floornum);
-        */
     }
 }

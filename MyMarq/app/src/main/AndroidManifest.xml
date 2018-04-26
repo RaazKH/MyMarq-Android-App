@@ -34,6 +34,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".EngineeringHall" />
         </activity>
+        <activity android:name=".Button_Activity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".amu_floors"></activity>
+        <activity android:name=".cudahy_floors"></activity>
+        <activity android:name=".haggerty_floors"></activity>
+        <activity android:name=".marquette_floors"></activity>
+        <activity android:name=".memorial_floors"></activity>
+        <activity android:name=".olin_floors"></activity>
+        <activity android:name=".raynor_floors"></activity>
     </application>
 
 </manifest>
